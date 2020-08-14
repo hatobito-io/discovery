@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package proto;
+
+option go_package = "github.com/hatobito-io/discovery/proto";
+
+message ServiceInfoProto {
+    string name = 1;
+    string address = 2;
+    string client_id = 3;
+}
+
+message ServiceInterest {
+    repeated string service_name = 1;
+}
+
+message AgentStopped {
+    string agent_id = 1;
+}
+
+message ServicesList {
+    repeated ServiceInfoProto services = 1;
+}
