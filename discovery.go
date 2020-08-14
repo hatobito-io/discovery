@@ -13,7 +13,7 @@ import (
 
 // DefaultSubjectPrefix is the default subject prefix for messages sent by
 // service discovery agent.
-const DefaultSubjectPrefix = "hatobito.service.discovery"
+const DefaultSubjectPrefix = "github.com.hatobitoio.discovery"
 
 // DefaultUpdateInterval is the default update interval for agents. If an agent
 // does not send an update within expected update interval, other agents will
